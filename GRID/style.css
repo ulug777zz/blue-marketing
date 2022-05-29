@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* сетка по горизонтали */
+    grid-template-rows: repeat(3, 1fr); /* сетка по вертикали */
+    height: 300px;
+   /*  column-gap: 15px;
+    row-gap: 15px; */
+    gap: 15px;
+
+}
+
+.item {
+    background: green;
+    
+}
+
+.item:nth-of-type(1) {
+    grid-column: span 2;
+    grid-row: span 1;
+    background: blueviolet;
+}
+
+.item:nth-of-type(2) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item:nth-of-type(3), .item:nth-of-type(9), .item:nth-of-type(10) {
+    grid-column: span 2;
+    
+}
+
+
